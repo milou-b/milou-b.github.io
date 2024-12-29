@@ -8,12 +8,12 @@ import { getAuth, signInWithEmailAndPassword } from 'https://www.gstatic.com/fir
 import { getFirestore, collection, doc, getDocs, setDoc, addDoc, deleteDoc } from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js'
 
 const firebaseConfig = {
-	apiKey: "AIzaSyDtUQ85JVTm9Q7KIdJBXDrJqEyqBkP54dQ",
-	authDomain: "geboortelijst-262cf.firebaseapp.com",
-	projectId: "geboortelijst-262cf",
-	storageBucket: "geboortelijst-262cf.appspot.com",
-	messagingSenderId: "476696767686",
-	appId: "1:476696767686:web:c1aa713eb90923c8f8fbc7"
+   apiKey: "AIzaSyCtWujZ82Mha-QtG_uHVMgfFr6xH6UHHSY",
+    authDomain: "geboortelijst-milou.firebaseapp.com",
+    projectId: "geboortelijst-milou",
+    storageBucket: "geboortelijst-milou.firebasestorage.app",
+    messagingSenderId: "432315502473",
+    appId: "1:432315502473:web:18488e9640e76d59545b58"
 };
 
 window.onload = function() {
@@ -48,7 +48,7 @@ window.onload = function() {
     const txtGekochtBericht = document.getElementById('txtGekochtBericht')
     let currentProduct = undefined
     let products = {}
-    const productsToAdd = [{
+    const productsToAdd = []; /* [{
         naam: "Maxi Cosi autostoel",
         beschrijving: "AxissFix i-Size",
         prijs: 259,
@@ -79,7 +79,7 @@ window.onload = function() {
         prijs: 60,
         status: 0,
         image: "https://static.dreambaby.be/wcsstore/ColruytB2CCAS/JPG/JPG/646x1000/std.lang.all/38/50/asset-1413850.jpg"
-    }]
+    }]*/
 
     const txtBeschReserveer = document.getElementById("reserveerBeschrijving")
     const textBeschrijvingReserveerStap1Nieuw = "Met onderstaande knop kan je het product bekijken op een webshop om te kopen. Kom je graag je geschenk persoonlijk afgeven? Laat het dan bij jou thuis leveren. Of stuur het rechtstreeks naar ons huisadres: Paddestraat 84 - 9620 Zottegem."
@@ -87,8 +87,7 @@ window.onload = function() {
 
     async function login(){
         try{
-            //TODO change password
-            user = await signInWithEmailAndPassword(auth, 'jensbaetens1@gmail.com', input_pass.value)
+            user = await signInWithEmailAndPassword(auth, 'miloubaetens@outlook.com', input_pass.value)
             if(user){
                 user = user.userCredential
                 localStorage.setItem("pass", input_pass.value);
