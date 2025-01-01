@@ -82,8 +82,8 @@ window.onload = function() {
     }]*/
 
     const txtBeschReserveer = document.getElementById("reserveerBeschrijving")
-    const textBeschrijvingReserveerStap1Nieuw = "Met onderstaande knop kan je het product bekijken op een webshop om te kopen. Kom je graag je geschenk persoonlijk afgeven? Laat het dan bij jou thuis leveren. Of stuur het rechtstreeks naar ons huisadres: Paddestraat 84 - 9620 Zottegem."
-    const textBeschrijvingReserveerStap1Oud = "Dit product hebben mijn ouders reeds zelf gekocht omdat we het nu al gebruiken. Indien je wilt bijleggen voor dit artikel kan dit steeds door een bijdrage te storten op mijn rekening BE30 0829 1344 7711."
+    const textBeschrijvingReserveerStap1Nieuw = "Met onderstaande knop kan je het product bekijken op een webshop om te kopen. Kom je graag je geschenk persoonlijk afgeven? Laat het dan bij jou thuis leveren. Of stuur het rechtstreeks naar ons huisadres: Stevelberg 58C - 1541 Pajottegem."
+    const textBeschrijvingReserveerStap1Oud = "Dit product hebben mijn ouders reeds zelf gekocht omdat we het nu al gebruiken. Indien je wilt bijleggen voor dit artikel kan dit steeds door een bijdrage te storten op mijn rekening BE89 0829 4700 7485."
 
     async function login(){
         try{
