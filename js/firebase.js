@@ -173,7 +173,7 @@ window.onload = function() {
                                 <div class="card-body">
                                     <h4 class="card-title">${data.naam}</h4>
                                     <p class="card-text">${data.beschrijving}</p>
-                                    <button type="button" class="btn" style="background-color: buttonface; pointer-events: none;"> ${data.prijs} euro</button>
+                                    <button type="button" class="btn" style="background-color: #f9bf9a; pointer-events: none;"> ${data.prijs} euro</button>
                                 </div>
                             </div>
                         `
@@ -199,7 +199,7 @@ window.onload = function() {
                                 <div class="card-body">
                                     <h4 class="card-title">${data.naam}</h4>
                                     <p class="card-text">${data.beschrijving}</p>
-                                    <button type="button" class="btn" style="background-color: buttonface; pointer-events: none;"> ${data.prijs} euro</button>
+                                    <button type="button" class="btn" style="background-color: #f9bf9a; pointer-events: none;"> ${data.prijs} euro</button>
                                 </div>
                             </div>
                         `
