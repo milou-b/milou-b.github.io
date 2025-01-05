@@ -153,14 +153,8 @@ window.onload = function() {
     function renderProduct(id, data){
         if(data.link && data.status == 2){
             return
-        } else if (data.link && data.status ==1){
-            console.log(data.naam);
-            console.log(data.gereserveerdTot);
-            console.log(Date.now());
-            console.log(Date.now() + 0);
-           
+        } else if (data.link && data.status ==1){           
             if(data.gereserveerdTot < Date.now()){
-                console.log("unreserve");
                 unreserveProduct(id);
                 data.status = 0
             } else {
