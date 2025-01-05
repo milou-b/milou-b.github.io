@@ -155,6 +155,10 @@ window.onload = function() {
             return
         } else if (data.link && data.status ==1){
             console.log(data.naam);
+            console.log(data.reservedUntil);
+            console.log(Date.now());
+            console.log(Date.now() + 0);
+           
             if(data.reservedUntil < Date.now()){
                 console.log("unreserve");
                 unreserveProduct(id);
