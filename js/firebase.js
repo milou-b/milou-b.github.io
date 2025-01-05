@@ -154,7 +154,9 @@ window.onload = function() {
         if(data.link && data.status == 2){
             return
         } else if (data.link && data.status ==1){
+            console.log(data.naam);
             if(data.reservedUntil < Date.now()){
+                console.log("unreserve");
                 unreserveProduct(id);
                 data.status = 0
             } else {
