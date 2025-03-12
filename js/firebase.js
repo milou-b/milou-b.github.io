@@ -87,7 +87,7 @@ window.onload = function() {
 
     async function login(){
         try{
-            user = await signInWithEmailAndPassword(auth, 'miloubaetens@outlook.com', input_pass.value)
+            user = await signInWithEmailAndPassword(auth, 'miloubaetens@outlook.com', input_pass.value.toLowerCase())
             if(user){
                 user = user.userCredential
                 localStorage.setItem("pass", input_pass.value);
